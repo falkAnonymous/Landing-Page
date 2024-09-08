@@ -1,215 +1,287 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right, #94a2cf, rgb(9, 59, 151));
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Estilo do cabeçalho */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #f4f4f4;
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  /* Estilo do logo */
-  .logo {
-    margin-left: 20px;
-    height: 50px;
-    width: 50px;
-  }
-  
-  /* Estilo do menu */
-  nav {
-    margin-right: 20px;
-  }
-  
-  nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-left: 20px;
-    position: relative;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #333;
-    padding: 5px 0;
-    display: block;
-  }
-  
-  nav ul li a::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #333;
-    transition: width 0.3s;
-  }
-  
-  nav ul li a:hover::after {
-    width: 100%;
-  }
-  
-  /* Seção principal */
-  .main-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    flex: 1;
-    width: 100%;
-    max-width: 1200px;
-    position: relative;
-  }
-  
-  .main-section img {
-    width: 300px;
-    height: auto;
-    margin-left: 40px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 15px; /* Adiciona bordas arredondadas */
-  }
-  
-  .main-section img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  .main-section .content {
-    max-width: 500px;
-  }
-  
-  /* Estilo do conteúdo da seção principal */
-  .main-section .content h1 {
-    margin-bottom: 20px;
-    font-size: 2.5rem;
-  }
-  
-  .main-section .content p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilo do botão */
-  .main-section .content button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #94a2cf, rgb(9, 59, 151));
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Estilo do logo */
+.logo {
+  margin-left: 20px;
+  height: 50px;
+  width: 50px;
+}
+
+/* Estilo do menu */
+nav {
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 0;
+  display: block;
+}
+
+nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #333;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Menu hambúrguer */
+.menu-hamburguer {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Seção principal */
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+}
+
+.main-section img {
+  width: 300px;
+  height: auto;
+  margin-left: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 15px;
+  /* Adiciona bordas arredondadas */
+}
+
+.main-section img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.main-section .content {
+  max-width: 500px;
+}
+
+/* Estilo do conteúdo da seção principal */
+.main-section .content h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.main-section .content p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Estilo do botão */
+.main-section .content button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo do carrossel */
+.testimonial-container {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.testimonial {
+  min-width: 100%;
+  transition: transform 1s ease;
+}
+
 /* Seção de depoimentos */
 .testimonials {
-    padding: 40px;
-    background: linear-gradient(to right, #94a2cf, rgb(9, 59, 151));
-    text-align: center;
-    width: 100%;
-    max-width: 1200px;
-    color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  background: linear-gradient(to right, #94a2cf, rgb(9, 59, 151));
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  color: white;
+}
+
+.testimonials h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: white;
+}
+
+.testimonials .testimonial-container {
+  display: flex;
+  overflow: hidden;
+  /* Esconde os elementos fora da área visível */
+  position: relative;
+  width: 100%;
+}
+
+.testimonials .testimonial {
+  min-width: 100%;
+  transition: transform 1s ease;
+  /* Ajusta a transição para 1 segundo */
+}
+
+.testimonials img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+/* Seção de contato */
+.contact {
+  padding: 40px;
+  background: linear-gradient(to right, #e0e0e0, #f4f4f4);
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact form button {
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Seção Saiba Mais */
+.about {
+  padding: 40px;
+  background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Estilo do rodapé */
+footer {
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .menu-hamburguer {
+    display: block;
   }
-  
-  .testimonials h2 {
-    margin-bottom: 20px;
-    font-size: 2rem; /* Aumenta o tamanho do título */
-    color: white; /* Define a cor do título como branco */
-  }
-  
-  .testimonials .testimonial-container {
-    display: flex;
-    overflow: hidden; /* Esconde os elementos fora da área visível */
-    position: relative;
-    width: 100%;
-  }
-  
-  .testimonials .testimonial {
-    min-width: 100%;
-    transition: transform 1s ease; /* Ajusta a transição para 1 segundo */
-  }
-  
-  .testimonials img {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-  }
-  
-  /* Seção de contato */
-  .contact {
-    padding: 40px;
-    background: linear-gradient(to right, #e0e0e0, #f4f4f4);
-    width: 100%;
-    max-width: 1200px;
-  }
-  
-  .contact h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .contact form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
+
+  nav ul {
+    display: none;
     flex-direction: column;
-  }
-  
-  .contact form input, .contact form textarea {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .contact form button {
-    padding: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Seção Saiba Mais */
-  .about {
-    padding: 40px;
-    background: linear-gradient(to right, #f9f9f9, #e0e0e0);
-    text-align: center;
     width: 100%;
-    max-width: 1200px;
-  }
-  
-  .about h2 {
-    margin-bottom: 20px;
-  }
-  
-  .about p {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 1.1rem;
-  }
-  
-  /* Estilo do rodapé */
-  footer {
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: #f4f4f4;
     text-align: center;
-    position: relative;
-    width: 100%;
-    max-width: 1200px;
   }
-  
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .main-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-section img {
+    margin: 20px 0;
+  }
+
+  .testimonial-container {
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+
+  .testimonial {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+  }
+}

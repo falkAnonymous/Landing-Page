@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Css/styleNew.css">
-    
     <title>Landing Page</title>
 </head>
+
 <body>
 
     <!-- Cabeçalho -->
     <header>
         <img src="/image/logo.jpg" alt="Logo" class="logo">
         <nav>
-            <ul>
+            <div class="menu-hamburguer" onclick="toggleMenu()">☰</div>
+            <ul id="menu">
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="#compra">Compre Já</a></li>
                 <li><a href="#saibamais">Saiba Mais</a></li>
@@ -25,33 +27,40 @@
     <section class="main-section">
         <div class="content">
             <h1>SonusWave Pro – Som Imersivo e Conforto Superior</h1>
-            <p>Descubra o poder do som com o SonusWave Pro. Equipado com tecnologia de cancelamento de ruído avançada e drivers de alta definição, 
-             este fone de ouvido oferece uma experiência auditiva incomparável, com graves profundos e agudos cristalinos. Projetado para máximo conforto, 
-             o SonusWave Pro possui almofadas de ouvido macias e uma estrutura leve que garante horas de uso sem incômodo. Com bateria de longa duração e conectividade sem fio, 
-             é o companheiro ideal para trabalho, lazer ou exercícios. Eleve sua experiência sonora para o próximo nível com o SonusWave Pro!</p>
+            <p>Descubra o poder do som com o SonusWave Pro. Equipado com tecnologia de cancelamento de ruído avançada e
+                drivers de alta definição,
+                este fone de ouvido oferece uma experiência auditiva incomparável, com graves profundos e agudos
+                cristalinos. Projetado para máximo conforto,
+                o SonusWave Pro possui almofadas de ouvido macias e uma estrutura leve que garante horas de uso sem
+                incômodo. Com bateria de longa duração e conectividade sem fio,
+                é o companheiro ideal para trabalho, lazer ou exercícios. Eleve sua experiência sonora para o próximo
+                nível com o SonusWave Pro!</p>
             <button id="compra">Compre Já o Seu</button>
         </div>
         <img src="/image/fone.jpg" alt="Imagem principal" id="fone-img">
     </section>
 
     <!-- Seção de depoimentos -->
-<section class="testimonials">
-  <h2>Depoimentos de Clientes</h2>
-  <div class="testimonial-container">
-      <div class="testimonial">
-          <img src="/image/homen-1.jpg" alt="imagem-depoimento1">
-          <p>"Ótimo serviço, super recomendado!" - Cliente 1</p>
-      </div>
-      <div class="testimonial">
-          <img src="/image/homen-2.jpg" alt="imagem-depoimento2">
-          <p>"A equipe é muito atenciosa e profissional!" - Cliente 2</p>
-      </div>
-      <div class="testimonial">
-          <img src="/image/mulher.jpg" alt="imagem-depoimento3">
-          <p>"Voltarei a fazer negócios com certeza!" - Cliente 3</p>
-      </div>
-  </div>
-</section>
+    <section class="testimonials">
+        <h2>Depoimentos de Clientes</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <img src="/image/homen-1.jpg" alt="imagem-depoimento1">
+                <p>"O SonusWave Pro é incrível! A qualidade do som é excepcional e o conforto é incomparável. Super
+                    recomendado!"</p>
+            </div>
+            <div class="testimonial">
+                <img src="/image/homen-2.jpg" alt="imagem-depoimento2">
+                <p>"Este fone superou todas as minhas expectativas. A tecnologia de cancelamento de ruído é fantástica.
+                    Eu definitivamente compraria novamente!"</p>
+            </div>
+            <div class="testimonial">
+                <img src="/image/mulher.jpg" alt="imagem-depoimento3">
+                <p>"A qualidade do SonusWave Pro é impressionante. Nunca experimentei algo assim antes. Vale cada
+                    centavo!"</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Seção de contato -->
     <section class="contact" id="contato">
@@ -67,13 +76,17 @@
     <!-- Seção Saiba Mais -->
     <section class="about" id="saibamais">
         <h2>Saiba Mais sobre o SonusWave Pro</h2>
-        <p>O SonusWave Pro foi desenvolvido para proporcionar uma experiência auditiva de alta qualidade, com tecnologia de cancelamento de ruído e uma estrutura ergonômica. Seu design moderno e confortável permite o uso prolongado sem desconforto, seja para trabalho, exercícios ou lazer. A bateria de longa duração e a conectividade sem fio tornam este fone de ouvido o companheiro ideal para qualquer ocasião.</p>
+        <p>O SonusWave Pro foi desenvolvido para proporcionar uma experiência auditiva de alta qualidade, com tecnologia
+            de cancelamento de ruído e uma estrutura ergonômica. Seu design moderno e confortável permite o uso
+            prolongado sem desconforto, seja para trabalho, exercícios ou lazer. A bateria de longa duração e a
+            conectividade sem fio tornam este fone de ouvido o companheiro ideal para qualquer ocasião.</p>
     </section>
 
     <!-- Rodapé -->
     <footer>
-      <p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
-  </footer>
-  <script src="/Js/script.js"></script>
+        <p>© 2024 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+    <script src="/Js/script.js"></script>
 </body>
+
 </html>
