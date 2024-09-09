@@ -117,10 +117,17 @@ nav ul li a:hover::after {
 .main-section .content button {
   padding: 10px 20px;
   font-size: 1rem;
-  background-color: #333;
+  background-color: #092c8d;
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 50px;
+}
+
+.main-section .content button:hover {
+  opacity: 0.8;
+  border: 0.1px solid;
+  border-color: rgb(238, 238, 238);
 }
 
 /* Estilo do carrossel */
@@ -206,7 +213,7 @@ nav ul li a:hover::after {
 
 .contact form button {
   padding: 10px;
-  background-color: #333;
+  background-color: #092c8d;
   color: white;
   border: none;
   cursor: pointer;
@@ -240,6 +247,120 @@ footer {
   position: relative;
   width: 100%;
   max-width: 1200px;
+}
+
+/* Estilo do modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 2px solid #888;
+  /* Adiciona bordas ao modal */
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  width: 80%;
+  max-width: 400px;
+  /* Reduz a largura máxima */
+  position: relative;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  /* Alinha os elementos em coluna */
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.product-info img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.product-info div {
+  width: 100%;
+}
+
+.product-info label,
+.product-info input,
+.product-info select {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.product-info input[type="number"] {
+  -moz-appearance: textfield;
+  /* Remove os botões de incremento/decremento */
+}
+
+.product-info input[type="number"]::-webkit-outer-spin-button,
+.product-info input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.buy-button {
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #092c8d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.buy-button:focus {
+  outline: none;
+}
+
+.confirmation {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.confirmation .checkmark {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 20px;
 }
 
 /* Responsividade */

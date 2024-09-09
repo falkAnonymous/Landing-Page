@@ -35,10 +35,38 @@
                 incômodo. Com bateria de longa duração e conectividade sem fio,
                 é o companheiro ideal para trabalho, lazer ou exercícios. Eleve sua experiência sonora para o próximo
                 nível com o SonusWave Pro!</p>
-            <button id="compra">Compre Já o Seu</button>
+            <button id="compra" onclick="openModal()">Compre Já o Seu</button>
         </div>
         <img src="/image/fone.jpg" alt="Imagem principal" id="fone-img">
     </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">×</span>
+            <h2>Finalizar Compra</h2>
+            <div class="product-info">
+                <img src="/image/fone.jpg" alt="Produto">
+                <div>
+                    <p><strong>Nome do Produto:</strong> SonusWave Pro</p>
+                    <label for="quantity">Quantidade:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <label for="payment">Forma de Pagamento:</label>
+                    <select id="payment" name="payment">
+                        <option value="cartao">Cartão de Crédito</option>
+                        <option value="boleto">Boleto Bancário</option>
+                        <option value="pix">PIX</option>
+                    </select>
+                </div>
+            </div>
+            <form id="purchase-form">
+                <input type="text" placeholder="Nome Completo" required>
+                <input type="tel" placeholder="Telefone" required>
+                <input type="email" placeholder="Email" required>
+                <button type="submit" class="buy-button">Comprar</button>
+            </form>
+        </div>
+    </div>
 
     <!-- Seção de depoimentos -->
     <section class="testimonials">
